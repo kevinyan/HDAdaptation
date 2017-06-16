@@ -1,0 +1,27 @@
+{
+  "name": "hda",
+  "version": "1.0.0",
+  "description": "## 高清图片解决方案 #### 解决问题：代码编写时一次引入，合理适配各端",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinyan/HDAdaptation.git"
+  },
+  "keywords": [
+    "高清适配方案"
+  ],
+  "author": "keelvin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevinyan/HDAdaptation/issues"
+  },
+  "homepage": "https://github.com/kevinyan/HDAdaptation#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^7.0.0"
+  }
+}
