@@ -1,5 +1,12 @@
 # 移动端高清图片兼容解决方案
 
+- 『NPD』图片上传处理平台。上传一个图片，得到三种分辨率的图片，并同步至服务器;
+-  CSS编译：```fis3-preprocessor-postcss-hd``` 插件;
+-  JS 判断修改```<image>```标签```srcset```属性，根据环境进行替换。
+
+
+# 背景
+
 ## 几个概念
 
 - 设备像素比 = 物理像素 / 设备独立像素 
@@ -65,11 +72,11 @@
 
 ## 问题 3：新的API有兼容性问题，怎么破？
 
-```
-fis3-preprocessor-postcss-hd
-```
+通过medie query的```-webkit-min-device-pixel-ratio```来做判断区分，进而加载不同图片
 
-原理：利用PostCss在Fis编译过程中增加预处理插件来处理CSS
+利用 ```fis3-preprocessor-postcss-hd ```插件
+
+插件原理：利用PostCss在Fis编译过程中增加预处理插件来处理CSS
 
 #### CSS  [预编译 & 后编译](http://www.kuqin.com/shuoit/20150210/344790.html)
 
