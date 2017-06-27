@@ -13,26 +13,26 @@
 - CSS编译
     - 借助POSTCSS，对css文件进行处理，并形成插件[```fis3-preprocessor-postcss-hd```](https://github.com/kevinyan/fis3-preprocessor-postcss-hd)
     
-Before
+    Before
 
-```
-body {
+    ```
+    body {
+        background: url('../baidu/demo.png') no-repeat center;
+    }
+    ```
+
+    After
+    ```
+    body {
     background: url('../baidu/demo.png') no-repeat center;
-}
-```
+    }
+    @media only screen and (-webkit-min-device-pixel-ratio:1){background:url('../baidu/demo_1x.png') no-repeat center}
 
-After
-```
-body {
-background: url('../baidu/demo.png') no-repeat center;
-}
-@media only screen and (-webkit-min-device-pixel-ratio:1){background:url('../baidu/demo_1x.png') no-repeat center}
+    @media only screen and (-webkit-min-device-pixel-ratio:2){background:url('../baidu/demo_2x.png') no-repeat center}
 
-@media only screen and (-webkit-min-device-pixel-ratio:2){background:url('../baidu/demo_2x.png') no-repeat center}
+    @media only screen and (-webkit-min-device-pixel-ratio:3){background:url('../baidu/demo_3x.png') no-repeat center}
 
-@media only screen and (-webkit-min-device-pixel-ratio:3){background:url('../baidu/demo_3x.png') no-repeat center}
-
-```
+    ```
 
 
 # 背景
