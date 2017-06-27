@@ -23,5 +23,8 @@
     "autoprefixer": "^7.1.1",
     "gulp": "^3.9.1",
     "gulp-postcss": "^7.0.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^7.1.1"
   }
 }

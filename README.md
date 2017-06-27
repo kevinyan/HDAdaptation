@@ -1,6 +1,6 @@
 # 移动端高清图片兼容解决方案
 
-- 『NPD』图片上传处理平台。上传一个图片，得到三种分辨率的图片，并同步至服务器;
+- [『NPD』图片上传处理平台](https://github.com/kevinyan/NodePicDeal)。上传一个图片，得到三种分辨率的图片，并同步至服务器;
 -  CSS编译：```fis3-preprocessor-postcss-hd``` 插件;
 -  JS 判断修改```<image>```标签```srcset```属性，根据环境进行替换。
 

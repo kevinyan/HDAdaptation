@@ -1,0 +1,7 @@
+body {
+    background: url('../baidu/demo.png') no-repeat center;
+}
+
+div {
+    display: flex;
+}
