@@ -1,5 +1,5 @@
 # 移动端高清图片兼容解决方案 
-- 图片生成 。  
+#### 图片生成 。  
 > node 处理上传图片，重新定义图片尺寸和命名，[NPD图片处理平台](https://github.com/kevinyan/NodePicDeal)
     
 Before
@@ -10,40 +10,33 @@ demo.png
 After 
 ```
 demo_1x.png
-```
-
-```
 demo_2x.png
-```
-
-```
 demo_3x.png
 ```
 
 
-- CSS编译。 
+#### CSS编译。 
 > 借助POSTCSS，对css文件进行处理，并形成插件[```fis3-preprocessor-postcss-hd```](https://github.com/kevinyan/fis3-preprocessor-postcss-hd)
     
-    Before
+Before
 
-    ```
-    body {
-        background: url('../baidu/demo.png') no-repeat center;
-    }
-    ```
-
-    After
-    ```
-    body {
+```
+body {
     background: url('../baidu/demo.png') no-repeat center;
-    }
-    @media only screen and (-webkit-min-device-pixel-ratio:1){background:url('../baidu/demo_1x.png') no-repeat center}
+}
+```
 
-    @media only screen and (-webkit-min-device-pixel-ratio:2){background:url('../baidu/demo_2x.png') no-repeat center}
+After
+```
+body {
+background: url('../baidu/demo.png') no-repeat center;
+}
+@media only screen and (-webkit-min-device-pixel-ratio:1){background:url('../baidu/demo_1x.png') no-repeat center}
 
-    @media only screen and (-webkit-min-device-pixel-ratio:3){background:url('../baidu/demo_3x.png') no-repeat center}
+@media only screen and (-webkit-min-device-pixel-ratio:2){background:url('../baidu/demo_2x.png') no-repeat center}
 
-    ```
+@media only screen and (-webkit-min-device-pixel-ratio:3){background:url('../baidu/demo_3x.png') no-repeat center}
+```
 
 
 # 解决痛点
