@@ -1,17 +1,28 @@
-# 移动端高清图片兼容解决方案
-- 图片生成
-    -node 处理上传图片，重新定义图片尺寸和命名，[NHD图片处理平台](https://github.com/kevinyan/NodePicDeal)
+# 移动端高清图片兼容解决方案 
+- 图片生成 。  
+> node 处理上传图片，重新定义图片尺寸和命名，[NPD图片处理平台](https://github.com/kevinyan/NodePicDeal)
     
-    Before
-    ```demo.png```
+Before
+```
+demo.png
+```
 
-    After
-    ```demo_1x.png```
-    ```demo_2x.png```
-    ```demo_3x.png```
+After 
+```
+demo_1x.png
+```
 
-- CSS编译
-    - 借助POSTCSS，对css文件进行处理，并形成插件[```fis3-preprocessor-postcss-hd```](https://github.com/kevinyan/fis3-preprocessor-postcss-hd)
+```
+demo_2x.png
+```
+
+```
+demo_3x.png
+```
+
+
+- CSS编译。 
+> 借助POSTCSS，对css文件进行处理，并形成插件[```fis3-preprocessor-postcss-hd```](https://github.com/kevinyan/fis3-preprocessor-postcss-hd)
     
     Before
 
@@ -34,6 +45,9 @@
 
     ```
 
+
+# 解决痛点
+- 移动端高清图片适配
 
 # 背景
 
