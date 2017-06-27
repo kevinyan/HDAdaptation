@@ -1,8 +1,38 @@
 # 移动端高清图片兼容解决方案
+- 图片生成
+    -node 处理上传图片，重新定义图片尺寸和命名，[NHD图片处理平台](https://github.com/kevinyan/NodePicDeal)
+    
+    Before
+    ```kevin.png```
 
-- [『NPD』图片上传处理平台](https://github.com/kevinyan/NodePicDeal)。上传一个图片，得到三种分辨率的图片，并同步至服务器;
--  CSS编译：```fis3-preprocessor-postcss-hd``` 插件;
--  JS 判断修改```<image>```标签```srcset```属性，根据环境进行替换。
+    After
+    ```kevin_1x.png```
+    ```kevin_2x.png```
+    ```kevin_3x.png```
+
+- CSS编译
+    - 借助POSTCSS，对css文件进行处理，并形成插件[```fis3-preprocessor-postcss-hd```](https://github.com/kevinyan/fis3-preprocessor-postcss-hd)
+    
+Before
+
+```
+body {
+    background: url('../baidu/demo.png') no-repeat center;
+}
+```
+
+After
+```
+body {
+background: url('../baidu/demo.png') no-repeat center;
+}
+@media only screen and (-webkit-min-device-pixel-ratio:1){background:url('../baidu/demo_1x.png') no-repeat center}
+
+@media only screen and (-webkit-min-device-pixel-ratio:2){background:url('../baidu/demo_2x.png') no-repeat center}
+
+@media only screen and (-webkit-min-device-pixel-ratio:3){background:url('../baidu/demo_3x.png') no-repeat center}
+
+```
 
 
 # 背景
