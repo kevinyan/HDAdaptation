@@ -3,12 +3,12 @@
     -node 处理上传图片，重新定义图片尺寸和命名，[NHD图片处理平台](https://github.com/kevinyan/NodePicDeal)
     
     Before
-    ```kevin.png```
+    ```demo.png```
 
     After
-    ```kevin_1x.png```
-    ```kevin_2x.png```
-    ```kevin_3x.png```
+    ```demo_1x.png```
+    ```demo_2x.png```
+    ```demo_3x.png```
 
 - CSS编译
     - 借助POSTCSS，对css文件进行处理，并形成插件[```fis3-preprocessor-postcss-hd```](https://github.com/kevinyan/fis3-preprocessor-postcss-hd)
