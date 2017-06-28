@@ -31,11 +31,23 @@ After
 body {
 background: url('../baidu/demo.png') no-repeat center;
 }
-@media only screen and (-webkit-min-device-pixel-ratio:1){background:url('../baidu/demo_1x.png') no-repeat center}
+@media only screen and (-webkit-min-device-pixel-ratio:1){
+    body{
+        background:url('../baidu/demo_1x.png') no-repeat center
+    }
+}
 
-@media only screen and (-webkit-min-device-pixel-ratio:2){background:url('../baidu/demo_2x.png') no-repeat center}
+@media only screen and (-webkit-min-device-pixel-ratio:2){
+    body{
+        background:url('../baidu/demo_2x.png') no-repeat center
+    }
+}
 
-@media only screen and (-webkit-min-device-pixel-ratio:3){background:url('../baidu/demo_3x.png') no-repeat center}
+@media only screen and (-webkit-min-device-pixel-ratio:3){
+    body{
+        background:url('../baidu/demo_3x.png') no-repeat center
+    }
+}
 ```
 
 
